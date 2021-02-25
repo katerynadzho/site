@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: Montserrat, sans-serif;
+    color: #002752;
+    background-color: #ECFAFE;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+/* For modern browsers */
+.clearfix:before, .clearfix:after {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* For IE6-7 */
+.clearfix {
+    zoom: 1;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+nav {
+    background-color: #034748;
+}
+
+ul li {
+    display: inline-block;
+    padding: 25px;
+    padding-bottom: 5px;
+    margin-right: 20px;
+}
+
+.banner {
+    background-image: url(../imgs/runner.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 600px;
+    overflow: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.banner-desc {
+    background-color: #034748;
+    opacity: 0.5;
+    width: 100%;
+}
+
+.summary {
+    overflow: auto;
+    padding: 0 50px;
+}
+
+.summary h2 {
+    color: #034748;
+}
+
+.summary a {
+    color: #1481ba;
+    text-decoration: underline;
+}
+
+.photos {
+    display: flex;
+    justify-content: space-between;
+    margin: 70px 0;
+    padding: 0 50px;
+}
+
+.photo {
+    width: 30%;
+}
+
+.testimonial {
+    min-height: 250px;
+    width: 100%;
+    background-color: #608f91;
+    color: white;
+    padding: 0 50px;
+    overflow: auto;
+}
+
+.testimonial h1 {
+    color: yellow;
+}
+
+.meetup {
+    text-align: center;
+    overflow: auto;
+}
+
+.meetup img {
+    width: 40%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    .photos {
+        flex-direction: column;
+        padding: 0;
+        margin: 40px 0;
+    }
+    
+    .photo {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    header, footer {
+        text-align: center;
+    }
+    
+    ul li {
+        display: block;
+        padding: 15px;
+        margin: 0;
+    }
+    
+    .banner {
+        height: 400px;
+    }
+
+}
